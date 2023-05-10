@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "sass --watch ./css/style.scss ./css/output.css"
+    "scss": "sass --watch ./css/style.scss ./css/output.css",
+    "tsc" : "tsc --watch ./js/script.ts"
   },
   "keywords": [],
   "author": "",
