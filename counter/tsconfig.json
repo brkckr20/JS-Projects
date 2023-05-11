@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Hangi ECMAScript sürümünü hedefleyeceğimizi belirler.
+    "module": "esnext", // Hangi modül biçimini kullanacağımızı belirler.
+    "strict": true, // Sıkı modu açar ve güvenli bir şekilde kod yazmanıza yardımcı olur.
+    "esModuleInterop": true, // CommonJS ve ES6 modül sistemleri arasında uyumluluk sağlar.
+    "jsx": "react", // JSX kullanıyorsanız, hangi JSX derleyicisini kullanacağınızı belirler.
+    "sourceMap": true, // Kaynak haritalarının üretilmesini sağlar. Hata ayıklama sırasında yardımcı olabilir.
+    "outDir": "./dist", // Derlenmiş dosyaların çıktı dizinini belirler.
+    "baseUrl": ".", // Göreli yolların çözüleceği baz dizini belirler.
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"] // Hangi yolların çözüleceğini belirler.
+    }
+  }
+}
