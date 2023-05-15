@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.my-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 15px 0 15px;
+  background-color: #ececec;
+  box-shadow: 0 0 4px gray;
+  position: relative;
+  z-index: 999;
+}
+.my-nav .links ul {
+  display: flex;
+  align-items: center;
+  top: -218px;
+}
+.my-nav .links ul li {
+  margin: 0 10px;
+}
+.my-nav .links ul li a {
+  color: black;
+}
+@media screen and (max-width: 600px) {
+  .my-nav .my-nav {
+    position: relative;
+    z-index: 2;
+  }
+  .my-nav .links ul {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8549019608);
+    left: 0;
+    z-index: -1;
+  }
+  .my-nav .links ul li {
+    padding: 10px 5px;
+  }
+  .my-nav .links ul li a {
+    color: #ececec;
+    animation-duration: 300ms;
+  }
+  .my-nav .links ul li a:hover {
+    border-bottom: 1px solid #ececec;
+  }
+  .my-nav .xxx {
+    display: none;
+  }
+}
+.my-nav .mobile-menu {
+  position: relative;
+  z-index: 1000;
+  border: none;
+  display: none;
+  transition: 500ms;
+  color: white;
+  padding: 4px 7px;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.my-nav .mobile-menu:hover {
+  background-color: black;
+}
+@media screen and (max-width: 600px) {
+  .my-nav .mobile-menu {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

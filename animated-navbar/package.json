@@ -1,0 +1,12 @@
+{
+  "name": "animated-navbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch ./src/css/style.scss ./src/css/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
